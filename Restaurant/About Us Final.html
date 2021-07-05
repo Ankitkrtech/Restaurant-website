@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="About Us Final.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="corona.css">
+   
+</head>
+<body >
+    
+    <header>
+        <div class="nav">
+            <ul>
+                <a href=""><li><img src="logo.jpg" alt="" height="80px" width="150px" style="margin-left: -300px;margin-top: -20px;" alt=""></li></a>
+                <a href="rpage1.html"><li>Home</li></a>
+                <a href="Menu.html"><li>Menu</li></a>
+                <a href="contact us final.html"><li>Contact</li></a>
+                <a href="http://localhost/Restaurant/Order.php"><li>Order</li></a>
+                <a href="services.html"><li>Services</li></a>
+            </ul>
+        </div>
+    </header>
+    <div class="pictures" >
+  <center>
+    
+    <img src="pic1.jpg" alt="" height="297" width="300"> 
+    <img src="pic3.jpg" alt="" height="298" width="300">
+    <img src="pic4.jpg" alt="" height="298" width="300">
+    <img src="pic5.jpg" alt="" height="298" width="300">
+    <img src="pic6.jpg" alt="" height="298" width="290">
+</div>
+</center>
+<!-- corona effect -->
+<div class="corona">
+<section class="home">
+    <div class="container">
+       <div class="row">
+           <div class="home-text">
+                <h1>How can I protect myself from Covid-19?</h1>
+                <p class="animate-text">
+                   <span>Wear Face Mask</span>
+                   <span>Cover Face When Coughing</span>
+                   <span>Wash Your Hand Frequently</span>
+                   <span>Stay At Home</span>
+                   <span>Avoid Close Contact</span>
+                </p>
+           </div>
+       </div>
+    </div>
+</section>
+
+
+
+<script>
+        const txts=document.querySelector(".animate-text").children,
+              txtsLen=txts.length;
+          let index=0;
+         const textInTimer=3000,
+               textOutTimer=2800;
+
+        function animateText() {
+           for(let i=0; i<txtsLen; i++){
+             txts[i].classList.remove("text-in","text-out");  
+           }
+           txts[index].classList.add("text-in");
+
+           setTimeout(function(){
+               txts[index].classList.add("text-out");              
+           },textOutTimer)
+
+           setTimeout(function(){
+
+             if(index == txtsLen-1){
+                 index=0;
+               }
+              else{
+                  index++;
+                }
+               animateText();
+           },textInTimer); 
+        }
+        
+        window.onload=animateText;
+  
+</script>
+
+</div>
+ 
+<!-- corona effect end -->
+
+
+
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>About Us</h1>
+            <p class="text">
+                <b>
+                    “Zaika Restaurant's brand mission is to be our customers’ favorite place and way to eat and drink.Everything we do is about you. From chefs who create exciting new flavors, to crew members who know exactly how you want your drink – we prioritize what you need to get you on your way. We strive to keep you at your best, and we remain loyal to you, your tastes and your time.”
+            </b>
+            </p>
+            <div class="Points"> 
+                <span><a href="#">Food</a></span>
+                <span><a href="#">Deals</a></span>
+                <span><a href="#">Offers</a></span>        
+            </div>
+            <div class="history">
+                <br><br><p> <b>
+                    The Zaika Restaurant has been the go-to diner for residents of Hyderabad. Our diner serves breakfast all day, in addition to wholesome and flavorful dining options for lunch and dinner. From burgers to salads, seafood to pastas, you’ll find all kinds of hearty meals prepared fresh at Zaika Restaurant. Our diner also has a full bakery with delicious baked goods and other treats, including our famous cheesecake. Sounds delicious, right?</b>
+                </p><br><br>
+              
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <div class="l-footer">
+    <h1>
+    <img src="logo.jpg" alt="" height="150px" width="450px"></h1>
+    <link rel="stylesheet" href="footer2.css">
+     <h1 style="padding-left: 65px;padding-right: 20px;font-family:'Times New Roman', Times, serif;border:2px solid #d57731;border-width: 8px;">   ZAIKA RESTAURANT</h1>
+    </div>
+    <ul class="r-footer" >
+        <li><h2> About</h2>
+            <ul class="box">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Gallery</a></li>
+            </ul>
+            </li>
+    <li><h2> Social</h2>
+    <ul class="box">
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Pinterest</a></li>
+    <li><a href="#">Instagram</a></li>
+    </ul>
+    </li>
+
+    <li><h2> Legal</h2>
+        <ul class="box">
+        <li><a href="#"> Policy</a></li>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Contract</a></li>
+        <li><a href="#">License</a></li>
+        </ul>
+        </li>
+
+    <li class="features">
+    <h2>Information</h2>
+    <ul class="box">
+     <li><a href="#">Pricing</a></li>
+    <li><a href="#">Sales</a></li>
+    <li><a href="#">Certifications</a></li>
+    <li><a href="#">Customer Service</a></li>
+    </ul>
+    </li>
+    </ul>
+    <div class="b-footer">
+    <p>All rights reserved by Zaika Restaurant 2021</p>
+    </div>
+    </footer>
+
+</html>

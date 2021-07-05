@@ -1,0 +1,113 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: poppins;
+    margin: 0;
+    display: grid;
+    font-size: 15px;
+    }
+    header p {
+    padding: 50px;
+    text-align: center;
+    color: #e60000;
+    text-transform: uppercase;
+    font-size: 95px;
+    font-weight: 700;
+    }
+    .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 89px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.952);
+    
+    }
+    
+    .footer > * {
+    flex:  1 100%;
+    }
+    
+    .l-footer {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    
+    }
+    
+    h2 {
+    font-weight: 400;
+    font-size: 25px;  
+    margin-left: 0px;
+
+    }
+    
+    .footer ul {
+        
+    list-style: none;
+    padding-left: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+
+    }
+    
+    .footer li {
+    list-style:disc;
+    line-height: 2em;
+     }
+    
+    .footer a {
+    text-decoration: none;
+    }
+    
+    .r-footer {
+    display: flex;
+    flex-flow: row wrap;
+    }
+    
+    .r-footer > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+    }
+    
+    .box a {
+    color: rgba(235, 235, 235, 0.768);
+    }
+    
+    .h-box {
+    column-count: 4;
+    column-gap: 0.25em;
+    }
+    
+    .b-footer {
+    text-align: center;
+    color: #999;
+    }
+    
+    .l-footer p {
+    padding-right: 20%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-style:oblique;
+    }   
+    
+    @media screen and (min-width: 950px) {
+    .r-footer > * {
+    flex: 1;
+    }
+    
+    .features {
+    flex-grow: 2;
+    }
+    
+    .l-footer {
+    flex: 1 0px;
+    }
+    
+    .r-footer {
+    flex: 2 0px;
+    }
+    }
+    
