@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaika</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="darkmode.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        
+        body{
+            background-color: white;
+           
+        }
+        .container1{
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            
+            /* background-color: rgb(178, 238, 14); */
+            /* height: 500px;
+            width: 100%; */
+        }.container3{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+           
+        }.container4{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 2%;
+        }.container5{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 2%;
+        }
+        *{
+    margin: 0;
+    padding: 0;
+}
+.container2{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+width: 500px;
+width: 100%;
+margin-top: 2%;
+}
+
+
+.nav{
+background-color: teal;
+height: 50px;
+width: 1700px;
+z-index: 100;
+position: fixed;
+}
+.nav li{
+
+    list-style-type: none;
+padding: 20px;
+float: left;
+    
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+   
+}
+.nav a li {
+    color: white;
+    
+
+}
+
+.neeche{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    background: #080505;
+    margin-bottom: 0rem;
+    height: 200px;
+    width: 100%;
+}
+
+@media (max-width:768px){
+    .container3{
+        display: block;
+        /* width: 100%; */
+        height: auto;
+         }
+
+    .container4{
+        display: block;
+        /* width: 100%; */
+        height: auto;
+    }
+    .container5{
+        display: block;
+        /* width: 100%; */
+        height: auto;
+    }
+    .container2{
+        display: block;
+        /* width: 100%; */
+        height: auto;
+    }
+    .container1{
+        display: block;
+        /* width: 100%; */
+        
+    }
+    .neeche{
+        /* display: inline block; */
+        /* width: 50%; */
+      display: grid;
+      grid-template-columns: min-content;
+      justify-content: center;
+      height: 800px;
+      /* height: 500px; */
+    }
+    }
+
+ </style>
+</head>
+<body>
+    <header>
+        <!-- <a href="javascript:void(0);" class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button" onclick="open_menu()" title="Menu">…</a> -->
+    <div class="menu-btn">
+    <div class="menu-btn__burger">
+          
+    
+        <div class="nav" style="opacity: 1;">
+            <ul>
+                <a href=""><li><img src="logo.jpg" alt="" height="50px" width="70px" style="margin-left: -300px;margin-top: -20px;" alt=""></li></a>
+                <a href="rpage1.html"><li>Home</li></a>
+                <a href="About Us Final.html"><li>About</li></a>
+                <a href="Menu.html"><li>Menu</li></a>
+                <a href="http://localhost/Restaurant/Order.php"><li>Order</li></a>
+                <a href="Contact Us Final.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+    </div>
+</header>
+
+    <div id="container">
+        <label class="switch">
+          <input type="checkbox" onclick="changeMode()">
+          <span class="slider"></span>
+        </label>
+      </div>
+    <!-- container 1 ka designing -->
+    <div class="container1" style="color:black;" >
+        <div  style="background-color: white;  height: 400px;background-image: url(pexels-jess-bailey-designs-1172849.jpg);
+        background-repeat: no-repeat;background-size: cover; display: flex; align-items: center; justify-content: center; margin-left: -150px; border: 2px solid black;">
+        <div  style=" margin-left:-40%;" >
+        <h1 style="color: teal; font-size: 250%;">    
+        
+            ZAIKA SERVICES <br> SINCE 1960 
+        </h1>
+        
+        <!-- <h2>
+            SERVICES <br> SINCE 1960 </br>
+        </h2>
+        <h3>
+            ROYAL <br> CATERING </br>
+        </h3>
+<p>Fabulous food at affordable prices</p> -->
+<!-- <img src="WhatsApp Image 2021-06-27 at 4.39.17 PM.jpeg" width="300px" height="150px"> -->
+    </div>
+</div>
+    <div style="background:-webkit-linear-gradient(left,rgb(60, 255, 60),rgb(243, 239, 239));height: 360px; display: flex; align-items: center; justify-content: center;  border: 2px solid black;">
+        <center>
+            <h1 style="color: blue;">
+                NEED A CATERING?
+            </h1>
+            <br>
+            <form class="contact" action="form5.php" method="post">
+
+                <input type="text" name="Name" id="Name" class="text-box" placeholder="Your Name" required style="color: rgb(0, 0, 0); border: 3px  solid rgb(0, 0, 0); border-radius: 8px ;opacity: 5;">
+                <br>
+                <br>
+                <input type="email" name="Email" id="Email" class="text-box" placeholder="Your Email"  required style="color: rgb(2, 2, 2); border: 3px solid rgb(17, 17, 17) ;border-radius: 8px; " >
+                <br>
+                <br>
+                <input type="text" name="phone" id="phone" class="text-box" placeholder="Your phone" required style="color: rgb(0, 0, 0); border: 3px  solid rgb(0, 0, 0); border-radius: 8px ;opacity: 5;">
+                <br>
+                <br>
+                <input type="text" name="city" id="city" class="text-box" placeholder="Your city" required style="color: rgb(0, 0, 0); border: 3px  solid rgb(0, 0, 0); border-radius: 8px ;opacity: 5;">
+                <br>
+              
+            <br>
+            <input type="submit" value="Submit" style="background-color: black; color: white; padding: 5px;">
+            <!-- <button style="padding: 3px; background-color: black; color: white;">
+               ORDER NOW 
+            </button> -->
+        </br>
+
+        </form>
+            
+        </center>
+    </div>
+</div>
+
+<!-- container 3 ka designing -->
+<div class="container3" style="color: white;" data-aos="fade-right">
+    <div style="height: 400px; width: 760px; background-image: url(pexels-jane-d-1099680.jpg); ">
+ 
+    </div>
+    <div style="color: red; display: flex; align-items: center; justify-content: center;">
+        <center>
+            <h1>
+                 EXQUISITE CUISINE AND FANTASTIC<br> CUSTOMER CARE </br>
+            </h1>
+            <br>
+        
+        <p>Zaika is a full service catering and event planning company dedicated to providind  you with <br> exquisite cuisine and fantasticcustome service. We offer a variety of menus and design </br>  options for everything from box lunches to full service platted dinners.</p>
+        <br>
+        <a href="About Us Final.html"><button style="background-color: teal; color: white; padding: 4px;">
+            KNOW MORE
+        </button></a>
+    </br>
+        </center>
+    </div>
+</div>
+
+<!-- container 4 ka designing -->
+<div class="container4" style="color: white;" data-aos="flip-left">
+    <div style= "display:flex; justify-content: center; align-items: center; color: red;">
+        <center>
+            <h1>
+                CATERING FOR
+            </h1>
+            <br>
+
+            
+                <ul style="list-style-type: none;">
+                <li>
+                   GRADUATION PARTY
+                </li>
+                <br>
+                <li>
+                   WEDDING PARTY
+                </li>
+                <br>
+                <li>
+                   COMMUNION PARTY
+                </li>
+                <br>
+                <!-- <li>
+                   BRIDAL SHOWER
+                </li>
+                <li>
+                   BABY SHOWER
+                </li> -->
+                <li>
+                   BIRTHDAY PARTY
+                </li>
+                <br>
+                <li>
+                   ANNIVERSARY PARTY
+                </li>
+                <br>
+                <li>
+                   RETIREMENT PARTY
+                </li>
+                <br>
+                <li>
+                   BUSINESS MEETING
+                </li>
+                <br>
+                <!-- <li>
+                   SPECIAL OCASSION
+                </li> -->
+            </ul>
+            <br>
+            <a href="Menu.html"><button style="background-color: teal; color: white; padding: 6px;">
+             MORE
+            </button></a>
+            
+            
+        </center>
+
+    </div>
+    <div style="height: 400px; width: 760px ; background-image: url(pexels-chan-walrus-958546.jpg); background-repeat: no-repeat; background-size: cover; display: flex;align-items: center; justify-content: center;" >
+        
+    </div>
+</div>
+
+<!-- container 5 ka designing -->
+<div class="container5" style="color: red"; data-aos="fade-left" >
+    <div style="height: 400px; width: 760px; background-image: url(pexels-hilal-bülbül-7552588.jpg); background-color: white;">
+
+    </div>
+    <div style=" display: flex; align-items: center; justify-content: center;">
+        <center>
+        <h1>
+            OUR FOOD WILL<br> MAKE YOU FEEL </br> GOOD!
+        </h1>
+        <br>
+    
+        <p>We offer a variety of menu options to customize any event with your own <br> personal selections. Just ask for us, set up an appointment to help plan </br> your event and leave the rest to us. We personalize your event.</p>
+
+        <p> Whether it is a graduation party, formal wedding, holiday party, or back yard picnic, <br> we can do it all just give us a call and we'll assist you with the rest. Zaika</br> catering can provide you with delivery or you can simply pick up your order and go. </p>
+    </center>
+    </div>
+</div>
+
+<!-- container 2 ka designing -->
+</div>
+<div class="container2" data-aos="flip-right">
+    <div class style="height: 400px; color: red; width: 760px; display: flex; justify-content: center; align-items: center;" >
+       <center>
+           <h1>
+               FAST DELIVERY & GOOD <br> PRICE ALWAYS </br>
+           </h1>
+       </center>
+    </div>
+    <div class style="width: 760px; height: 400px; background-image: url(pexels-rodnae-productions-7363099.jpg); background-repeat: no-repeat; background-size: cover; display: flex;align-items: center; justify-content: center;">
+        
+    </div>
+
+</div>
+
+<script>
+    function changeMode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    offset: 300,
+    duration: 1000,
+});
+</script>
+
+<footer>
+              
+    <div class="neeche" style="color: white;">
+      
+        <div style="display: flex;justify-content: center; align-items: center;"> 
+          
+        
+          <ul>
+            <h1> About us</h1> 
+              <li>Home</li>
+              <li>About</li>
+              <li>Our Products</li>
+              <li>Our Services</li>
+              <li>Contact us</li>
+          </ul>
+        </div>
+        <div style="display: flex;justify-content: center; align-items: center;"> 
+          
+        
+            <ul>
+                <h1>Our Products</h1> 
+                <li>Balushahi</li>
+                <li>Chole Bhature</li>
+                <li>Kulcha</li>
+                <li>VadaPav</li>
+                <li>Dosa</li>
+            </ul>
+           
+          </div>
+          <div style="display: flex;justify-content: center; align-items: center;"> 
+          
+        
+            <ul>
+              <h1>  Store Locator</h1> 
+                <li>Ludhiana</li>
+                <li>Chandigarh</li>
+                <li>Noida</li>
+                <li>Ghaziabad</li>
+                <li>Mumbai</li>
+            </ul>
+            
+          </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
