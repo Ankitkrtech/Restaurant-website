@@ -1,0 +1,278 @@
+  /* Style the body  */
+        
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    margin:20;
+    padding:0;
+    background-color:var(--primary-color);    
+    text-align: center;
+  } 
+
+  .header {
+    padding: 275px;
+    text-align: center;
+    background-image: url(https://st4.depositphotos.com/3591429/20919/i/1600/depositphotos_209199724-stock-photo-top-view-table-food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-color);
+    font-size: 30px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  /* Sub-header or Subtitle */
+  
+  /* Animation class */
+  .wrapper{
+      display: flex;
+      text-align: center;
+      padding:50px;
+      color:rgb(22, 204, 236);
+      font-size: 20px;
+      border: 5px solid rgb(236, 11, 11);
+    }
+    .wrapper .static-txt{
+      color: rgb(18, 53, 248);
+      font-size: 60px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .wrapper .dynamic-txts{
+      margin-left: 15px;
+      height: 90px;
+      line-height: 90px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .dynamic-txts li{
+      list-style: none;
+      color: #f01c1c;
+      font-size: 60px;
+      font-weight: 500;
+      position: relative;
+      top: 0;
+      animation: slide 12s steps(4) infinite;
+    }
+    @keyframes slide {
+      100%{
+        top: -360px;
+      }
+    }
+    .dynamic-txts li span{
+      position: relative;
+      margin: 5px 0;
+      line-height: 90px;
+    }
+    .dynamic-txts li span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #07ece0;
+      border-left: 2px solid #FC6D6D;
+      animation: typing 3s steps(10) infinite;
+    }
+    @keyframes typing {
+      40%, 60%{
+        left: calc(100% + 30px);
+      }
+      100%{
+        left: 0;
+      }
+    }
+/* Above this is the animation part */
+  html {
+       scroll-behavior: smooth;
+      }
+
+  /* Page Content */
+  .content {padding:20px;}
+  h1 {text-align: center; color: #f30909;}
+  h3 {text-align: center;}
+  p {text-align: center;}
+
+  .Type{
+     display: flex;
+     flex-direction: inline;
+     align-items: center ;
+     justify-content: center;
+     padding: 20px;
+     background-color:var(--primary-color);
+     text-align: center;
+   }
+
+   .Type div
+   {
+       display: inline;
+       text-align: center;
+   }
+
+   .section
+   {
+       border:10px black;
+   }
+
+    img {
+      border: 5px rgb(233, 10, 10);
+    }
+
+ /*  Dark Light */
+
+ #icon
+  {
+    width:30px;
+    cursor:pointer;
+    padding: 14px;
+  }
+  
+  :root{
+  --primary-color:#000106;
+  --secondary-color:#fff;
+    } 
+   .dark-theme{
+     --primary-color:white;
+     --secondary-color:black;
+   } 
+ 
+    /* Navigation Bar */
+  .nav{
+    background-color: red;         
+    height: 50px;
+    padding: 30px;
+    border: 20px white;
+    position: fixed; 
+    left: 0;      
+    top: 0;       
+    width: 100%;
+    z-index: 9999;
+    }
+    .nav li
+    {
+    list-style-type: none;
+    padding: 20px;
+    float: left;    
+    }
+    .nav ul{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        text-align: right;
+    }
+
+    .nav ul :hover
+    {
+      color: black;
+    } 
+
+    .nav a li {
+        color: white;
+    }
+    
+    .search
+    {
+      text-align: center;
+      padding: 20px;
+    }
+    /*Navigation Bar */
+
+    html, body {
+    margin : 0;
+    padding : 0;
+    }
+
+    /* The Main Menu part CSS  */
+    
+    .btn {
+        text-align: center;
+        vertical-align: middle;
+        padding: .67em;
+        cursor: pointer;
+    } 
+  
+    .btn-primary {
+        color: white;
+        background-color: #2D9CDB;
+        border: none;
+        border-radius: .3em;
+        font-weight: bold;
+    
+    }
+    
+    .btn-primary:hover {
+        background-color: rgb(235, 17, 17);
+    }
+    
+    .shop-item {
+        margin: 30px;
+        border: 5px (var(--secondary-color));
+    }
+    .shop-item-title {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color:rgb(14, 10, 250);
+    }
+    
+    .shop-item-image {
+        height: 250px;
+    }
+    
+    .shop-item-details {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    .shop-item-price {
+        flex-grow: 1;
+        color: rgb(15, 54, 230);
+    }
+    
+    .shop-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color:var(--primary-color);
+        background-size: cover;
+        color: red;
+    }
+
+    .shop-items h1
+    {
+      font-size: 60px;
+    }
+    
+    .shop-items p
+    {
+      font-size:20px;
+    }
+    /*  The main part CSS done */
+
+    .footer{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0rem;
+      background-color:black;
+      margin-bottom: 0;
+      padding:0;
+      height: 200px;
+      width: 100%;
+  }
+    footer
+    {
+      background-color:black;
+    }
+  
+    footer li
+    {
+      color:whitesmoke;
+    }
+    
+    footer h1
+    {
+      color:whitesmoke;
+    }
